@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 945181209964358812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5014045977670350054}
+        m_TargetAssemblyTypeName: CalitateManager, Assembly-CSharp
+        m_MethodName: Camere
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &38656607697131574
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +1002,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7964175924000822329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5014045977670350054}
+        m_TargetAssemblyTypeName: CalitateManager, Assembly-CSharp
+        m_MethodName: User
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1308688910242759553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3480,6 +3504,7 @@ GameObject:
   - component: {fileID: 2903216534555985579}
   - component: {fileID: 4503121079158918978}
   - component: {fileID: 3821111366192360927}
+  - component: {fileID: 5014045977670350054}
   m_Layer: 5
   m_Name: Tehnician Calitate Panel
   m_TagString: Untagged
@@ -3551,6 +3576,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5014045977670350054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959122138980961426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7242486b983ebeb47b28019eaf48a353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CamerePanel: {fileID: 5668906668996881902}
+  ControlCalitatePanel: {fileID: 4660693615067207765}
 --- !u!1 &4988592064030591975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5583,7 +5622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8157771510866839172}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5014045977670350054}
+        m_TargetAssemblyTypeName: CalitateManager, Assembly-CSharp
+        m_MethodName: ControlCalitate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8127622096006909763
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,9 +6,10 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
-    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel;
+    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel,usernamePanel,backgroundPanel;
     //LoginPanelVariables
-    public TMP_InputField username, password;
+    public GameObject RaportareProblemaPanel;
+    public string usernameCurrent;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,17 +28,36 @@ public class Manager : MonoBehaviour
     }
     public void Operator()
     {
-        GameObject panel=Instantiate(operatorPanel,uiParent.transform);
-        panel.transform.parent = uiParent.transform;
+        backgroundPanel = Instantiate(operatorPanel,uiParent.transform);
+        backgroundPanel.transform.parent = uiParent.transform;
+        usernameCurrent = "Operator";
     }
     public void Calitate()
     {
-        GameObject panel = Instantiate(calitatePanel, uiParent.transform);
-        panel.transform.parent = uiParent.transform;
+        backgroundPanel = Instantiate(calitatePanel, uiParent.transform);
+        backgroundPanel.transform.parent = uiParent.transform;
+        usernameCurrent = "Calitate";
     }
     public void Mentenanta()
     {
-        GameObject panel = Instantiate(mentenantaPanel, uiParent.transform);
+        backgroundPanel = Instantiate(mentenantaPanel, uiParent.transform);
+        backgroundPanel.transform.parent = uiParent.transform;
+        usernameCurrent = "Mentenanta";
+    }
+    public void RaportareProblema()
+    {
+        GameObject panel = Instantiate(RaportareProblemaPanel, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void User()
+    {
+        GameObject panel = Instantiate(usernamePanel, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void Login()
+    {
+        Destroy(backgroundPanel);
+        GameObject panel = Instantiate(loginPanel, uiParent.transform);
         panel.transform.parent = uiParent.transform;
     }
 }

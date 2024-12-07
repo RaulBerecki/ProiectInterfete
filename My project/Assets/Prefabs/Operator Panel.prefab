@@ -271,7 +271,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7158870051519420296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4190185779539407729}
+        m_TargetAssemblyTypeName: OperatorManager, Assembly-CSharp
+        m_MethodName: RaportareProblema
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1302190285077760831
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 408047182774347512}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4190185779539407729}
+        m_TargetAssemblyTypeName: OperatorManager, Assembly-CSharp
+        m_MethodName: User
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1371945740099460228
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +871,7 @@ GameObject:
   - component: {fileID: 6281759533422110371}
   - component: {fileID: 6499877466815689979}
   - component: {fileID: 8706964448922632911}
+  - component: {fileID: 4190185779539407729}
   m_Layer: 5
   m_Name: Operator Panel
   m_TagString: Untagged
@@ -918,6 +943,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4190185779539407729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517877437788626254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72a88d0aed890149b2af3ce7b12e02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listaEchipamente:
+  - {fileID: 4497088081246115558}
+  - {fileID: 377829360357767848}
+  - {fileID: 7558379181709164558}
+  - {fileID: 6109579829468971288}
+  - {fileID: 3188066453820473574}
 --- !u!1 &2758536253623947066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2830,7 +2873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 984081183948642759}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1

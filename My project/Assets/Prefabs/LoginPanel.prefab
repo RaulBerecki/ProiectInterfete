@@ -1528,8 +1528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa5ff1fad9e7e64a8c85dcf16adf4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  username: {fileID: 4564006206475964955}
-  password: {fileID: 5556875937339007782}
+  manager: {fileID: 0}
+  username: {fileID: 164653633414022406}
+  password: {fileID: 6369851648414492739}
 --- !u!1 &7525290842846375553
 GameObject:
   m_ObjectHideFlags: 0

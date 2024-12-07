@@ -11,8 +11,6 @@ public class LoginManager : MonoBehaviour
     void Start()
     {
         manager=GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
-        username = manager.username;
-        password = manager.password;
     }
 
     // Update is called once per frame
