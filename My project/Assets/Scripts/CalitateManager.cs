@@ -13,6 +13,11 @@ public class CalitateManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI currentCameraText;
     [SerializeField] string[] camerasTexts;
     int currentCamIndex;
+    [SerializeField] TMP_InputField partNumberInput;
+    //check 20s part variables
+    [SerializeField] Animator checkQuality;
+    float timer;
+    bool checking;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +27,25 @@ public class CalitateManager : MonoBehaviour
         currentCamIndex = 0;
         cameraView.sprite = cameras[currentCamIndex];
         currentCameraText.text = camerasTexts[currentCamIndex * 2] + "\n" + camerasTexts[currentCamIndex*2+1];
+        checking = true;
+        timer = 60;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(checking)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            checkQuality.Play("check");
+        }
+        if(timer < 0)
+        {
+            checking = false;
+        }
     }
     public void User()
     {
@@ -71,6 +89,27 @@ public class CalitateManager : MonoBehaviour
             currentCamIndex = 5;
             cameraView.sprite = cameras[currentCamIndex];
             currentCameraText.text = camerasTexts[currentCamIndex * 2] + "\n" + camerasTexts[currentCamIndex * 2 + 1];
+        }
+    }
+    public void Check()
+    {
+        if (!checking)
+        {
+            checking = true;
+            timer = 60;
+            checkQuality.Play("uncheck");
+        }
+    }
+    public void TrimiteRaport()
+    {
+        if (partNumberInput.text == "")
+        {
+            manager.RaportNetrimis();
+        }
+        else
+        {
+            manager.RaportTrimis();
+            partNumberInput.text = "";
         }
     }
 }

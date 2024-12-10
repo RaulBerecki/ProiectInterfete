@@ -432,6 +432,8 @@ MonoBehaviour:
   backgroundPanel: {fileID: 0}
   RaportareProblemaPanel: {fileID: 790916173642148681, guid: c643c35957a1e2142ab34792e3d77327, type: 3}
   usernameCurrent: 
+  popUpRaportTrimis: {fileID: 1367390417103058981, guid: 54f4960c34e8c754ebe7afb89df0754f, type: 3}
+  popUpRaportNetrimis: {fileID: 5479842551296329090, guid: 46e716844b9e1674fb69f766ce438466, type: 3}
 --- !u!4 &823317794
 Transform:
   m_ObjectHideFlags: 0

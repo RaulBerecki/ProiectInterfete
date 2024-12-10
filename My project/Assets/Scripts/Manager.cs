@@ -10,6 +10,8 @@ public class Manager : MonoBehaviour
     //LoginPanelVariables
     public GameObject RaportareProblemaPanel;
     public string usernameCurrent;
+    //CalitatePanels
+    public GameObject popUpRaportTrimis, popUpRaportNetrimis;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,16 @@ public class Manager : MonoBehaviour
     {
         Destroy(backgroundPanel);
         GameObject panel = Instantiate(loginPanel, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void RaportNetrimis()
+    {
+        GameObject panel = Instantiate(popUpRaportNetrimis, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void RaportTrimis()
+    {
+        GameObject panel = Instantiate(popUpRaportTrimis, uiParent.transform);
         panel.transform.parent = uiParent.transform;
     }
 }
