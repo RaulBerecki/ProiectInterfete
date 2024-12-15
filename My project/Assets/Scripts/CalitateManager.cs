@@ -9,7 +9,7 @@ public class CalitateManager : MonoBehaviour
     Manager manager;
     [SerializeField] GameObject CamerePanel,ControlCalitatePanel;
     [SerializeField] Sprite[] cameras;
-    [SerializeField] Image cameraView;
+    [SerializeField] Image cameraView,cameraButton,controlCalitateButton;
     [SerializeField] TextMeshProUGUI currentCameraText;
     [SerializeField] string[] camerasTexts;
     int currentCamIndex;
@@ -24,6 +24,8 @@ public class CalitateManager : MonoBehaviour
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         CamerePanel.SetActive(true);
         ControlCalitatePanel.SetActive(false);
+        cameraButton.color = new Color32(53, 53, 53, 255);
+        controlCalitateButton.color = new Color32(124, 124, 124, 255);
         currentCamIndex = 0;
         cameraView.sprite = cameras[currentCamIndex];
         currentCameraText.text = camerasTexts[currentCamIndex * 2] + "\n" + camerasTexts[currentCamIndex*2+1];
@@ -55,11 +57,15 @@ public class CalitateManager : MonoBehaviour
     {
         CamerePanel.SetActive(false);
         ControlCalitatePanel.SetActive(true);
+        cameraButton.color = new Color32(124, 124, 124, 255);
+        controlCalitateButton.color = new Color32(53, 53, 53, 255);
     }
     public void Camere()
     {
         CamerePanel.SetActive(true);
         ControlCalitatePanel.SetActive(false);
+        cameraButton.color = new Color32(53, 53, 53, 255);
+        controlCalitateButton.color = new Color32(124, 124, 124, 255);
     }
     public void UrmatoareaCamera()
     {

@@ -1341,7 +1341,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5772341829434064787
 CanvasRenderer:
@@ -1475,7 +1475,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6370002255778375406
 CanvasRenderer:
@@ -2475,8 +2475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -599.339, y: 391.9944}
-  m_SizeDelta: {x: 205.1221, y: 48.0112}
+  m_AnchoredPosition: {x: -598.7, y: 396.29}
+  m_SizeDelta: {x: 205.1221, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5726074712907860938
 CanvasRenderer:
@@ -2535,7 +2535,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2608,8 +2608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -780, y: 391.9944}
-  m_SizeDelta: {x: 160, y: 48.0112}
+  m_AnchoredPosition: {x: -780, y: 396.28967}
+  m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8516897192700504676
 CanvasRenderer:
@@ -2668,7 +2668,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2955,6 +2955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControlPanel: {fileID: 5353402142690919199}
   InventarPanel: {fileID: 422496735658514745}
+  controlButton: {fileID: 1040993011428712631}
+  inventarButton: {fileID: 5541626405618189570}
 --- !u!1 &5668067617926529974
 GameObject:
   m_ObjectHideFlags: 0
