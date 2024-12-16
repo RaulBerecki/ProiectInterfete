@@ -16,7 +16,7 @@ public class LoginManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(username.text);
+        
     }
     public void Login()
     {

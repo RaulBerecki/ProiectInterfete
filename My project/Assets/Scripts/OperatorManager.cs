@@ -41,5 +41,9 @@ public class OperatorManager : MonoBehaviour
         {
             manager.RaportareProblema();
         }
+        else
+        {
+            manager.ProblemaNetrimis();
+        }
     }
 }

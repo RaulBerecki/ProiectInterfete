@@ -6,7 +6,7 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
-    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel,usernamePanel,backgroundPanel;
+    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel,usernamePanel,backgroundPanel,problemaNetrimis;
     //LoginPanelVariables
     public GameObject RaportareProblemaPanel;
     public string usernameCurrent;
@@ -70,6 +70,11 @@ public class Manager : MonoBehaviour
     public void RaportTrimis()
     {
         GameObject panel = Instantiate(popUpRaportTrimis, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void ProblemaNetrimis()
+    {
+        GameObject panel = Instantiate(problemaNetrimis, uiParent.transform);
         panel.transform.parent = uiParent.transform;
     }
 }
