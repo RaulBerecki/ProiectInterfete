@@ -6,12 +6,16 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
-    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel,usernamePanel,backgroundPanel,problemaNetrimis;
+    public GameObject uiParent,loginPanel,operatorPanel,calitatePanel,mentenantaPanel,usernamePanel,backgroundPanel,problemaNetrimis,managerPanel;
     //LoginPanelVariables
     public GameObject RaportareProblemaPanel;
     public string usernameCurrent;
     //CalitatePanels
     public GameObject popUpRaportTrimis, popUpRaportNetrimis;
+    //MentenantaPanels
+    public GameObject popUpSetareManual;
+    //ManagerPanels
+    public GameObject popUpComandaGresita,popUpComandaCorecta;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +79,27 @@ public class Manager : MonoBehaviour
     public void ProblemaNetrimis()
     {
         GameObject panel = Instantiate(problemaNetrimis, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void ManagerPanel()
+    {
+        backgroundPanel = Instantiate(managerPanel, uiParent.transform);
+        backgroundPanel.transform.parent = uiParent.transform;
+        usernameCurrent = "Manager";
+    }
+    public void ComandaTrimisa()
+    {
+        GameObject panel = Instantiate(popUpComandaCorecta, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void ComandaGresita()
+    {
+        GameObject panel = Instantiate(popUpComandaGresita, uiParent.transform);
+        panel.transform.parent = uiParent.transform;
+    }
+    public void Manual()
+    {
+        GameObject panel = Instantiate(popUpSetareManual, uiParent.transform);
         panel.transform.parent = uiParent.transform;
     }
 }

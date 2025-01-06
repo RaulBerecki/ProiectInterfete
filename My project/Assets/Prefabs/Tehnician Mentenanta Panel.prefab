@@ -962,7 +962,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5175611616116893171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274276552741975043}
+        m_TargetAssemblyTypeName: MentenantaManager, Assembly-CSharp
+        m_MethodName: Manual
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2470917112615860207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,8 +1218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 10.238403, y: -49}
-  m_SizeDelta: {x: 1682.5232, y: 50}
+  m_AnchoredPosition: {x: 10.238403, y: -559.7736}
+  m_SizeDelta: {x: 1682.5232, y: 1071.5472}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &723946115287435485
 CanvasRenderer:
@@ -1237,7 +1249,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Item 1 2 buc
+  m_text: 'Surub M6x1.25 - 12 buc
+
+    Piulita M4 - 7 buc
+
+    Bucsa conveior - 2
+    buc
+
+    Surub M4 - 9 buc
+
+    Saiba M10 - 3 buc
+
+    Piulita M8 - 8 buc
+
+    Ventuza
+    gripper - 11 buc
+
+    Platbanda conveior - 3 buc
+
+    Profil aluminiu 3m - 19
+    buc
+
+    Conectori pini - 6 buc
+
+    Cablu alimentare motor conveior - 1 buc
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1264,8 +1302,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2957,6 +2995,29 @@ MonoBehaviour:
   InventarPanel: {fileID: 422496735658514745}
   controlButton: {fileID: 1040993011428712631}
   inventarButton: {fileID: 5541626405618189570}
+  textMasiniUnelte:
+  - 'Conveior 1, status: '
+  - MANUAL
+  - 'Conveior 2, status: '
+  - AUTOMAT
+  - 'Robot 1, status: '
+  - AUTOMAT
+  - 'Robot 3, status: '
+  - AUTOMAT
+  - 'Paletizor, status: '
+  - STOP
+  textMasiniStatus:
+  - {fileID: 7979070074344277963}
+  - {fileID: 2497430454154432292}
+  - {fileID: 1629080977067607232}
+  - {fileID: 893615829132072923}
+  - {fileID: 964772962871334772}
+  selectorMasini:
+  - {fileID: 8215691825499720264}
+  - {fileID: 2942450525514247404}
+  - {fileID: 699284603997365579}
+  - {fileID: 3705420783807723148}
+  - {fileID: 5175681532533390057}
 --- !u!1 &5668067617926529974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,7 +3980,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763703088599099823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274276552741975043}
+        m_TargetAssemblyTypeName: MentenantaManager, Assembly-CSharp
+        m_MethodName: Automat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7922834046630204602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,7 +4322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5508663092599410186}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274276552741975043}
+        m_TargetAssemblyTypeName: MentenantaManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8976909014176377615
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,5 +35,10 @@ public class LoginManager : MonoBehaviour
             manager.Mentenanta();
             Destroy(this.gameObject);
         }
+        else if (username.text == "manager" && username.text == password.text)
+        {
+            manager.ManagerPanel();
+            Destroy(this.gameObject);
+        }
     }
 }

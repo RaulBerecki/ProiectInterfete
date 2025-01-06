@@ -426,15 +426,19 @@ MonoBehaviour:
   uiParent: {fileID: 782979032}
   loginPanel: {fileID: 7481767639995462917, guid: ed6db9ac7ce8f6e4d8b97f9b412580f4, type: 3}
   operatorPanel: {fileID: 2517877437788626254, guid: bd3507328baebc547a8f924eee6ea9d6, type: 3}
-  calitatePanel: {fileID: 4959122138980961426, guid: 230599f71dd4e4042bac1b3879b64dc8, type: 3}
+  calitatePanel: {fileID: 4887465100511027935, guid: 230599f71dd4e4042bac1b3879b64dc8, type: 3}
   mentenantaPanel: {fileID: 5618015775452275184, guid: bdf51ce9f72fadc4496f7278f4235c30, type: 3}
   usernamePanel: {fileID: 6142093487067388017, guid: 06711a41c60aa55409fa78566e4eb7f5, type: 3}
   backgroundPanel: {fileID: 0}
   problemaNetrimis: {fileID: 8434563643432122224, guid: f2bcb4f282d3eb64585b13f888bf0677, type: 3}
+  managerPanel: {fileID: 4329178159645478713, guid: 4e9b600c0c96fe8428979feacded9463, type: 3}
   RaportareProblemaPanel: {fileID: 790916173642148681, guid: c643c35957a1e2142ab34792e3d77327, type: 3}
   usernameCurrent: 
   popUpRaportTrimis: {fileID: 1367390417103058981, guid: 54f4960c34e8c754ebe7afb89df0754f, type: 3}
   popUpRaportNetrimis: {fileID: 5479842551296329090, guid: 46e716844b9e1674fb69f766ce438466, type: 3}
+  popUpSetareManual: {fileID: 8289560522159069349, guid: a5704f17b165b9045bdc55e30d06e973, type: 3}
+  popUpComandaGresita: {fileID: 7430195324751041166, guid: 07f915e5b92fa3043b10b7a17f41684b, type: 3}
+  popUpComandaCorecta: {fileID: 8648852691364851647, guid: a7474dbc88b7bd842a6f5d50ff22c73a, type: 3}
 --- !u!4 &823317794
 Transform:
   m_ObjectHideFlags: 0

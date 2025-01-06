@@ -18,6 +18,7 @@ public class CalitateManager : MonoBehaviour
     [SerializeField] Animator checkQuality;
     float timer;
     bool checking;
+    [SerializeField] GameObject confirmPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class CalitateManager : MonoBehaviour
         currentCameraText.text = camerasTexts[currentCamIndex * 2] + "\n" + camerasTexts[currentCamIndex*2+1];
         checking = true;
         timer = 60;
+        confirmPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -101,10 +103,19 @@ public class CalitateManager : MonoBehaviour
     {
         if (!checking)
         {
-            checking = true;
-            timer = 60;
-            checkQuality.Play("uncheck");
+            confirmPanel.SetActive(true);
         }
+    }
+    public void DaButon()
+    {
+        checking = true;
+        timer = 60;
+        checkQuality.Play("uncheck");
+        confirmPanel.SetActive(false);
+    }
+    public void NuButon()
+    {
+        confirmPanel.SetActive(false);
     }
     public void TrimiteRaport()
     {

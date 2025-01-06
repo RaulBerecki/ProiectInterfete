@@ -1825,7 +1825,27 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Unitati produse pe schimb: 23/200
 
-    Nr. lot: 22'
+    Nr. lot: 22
+
+    Part Number curent:
+    2648.5196.586
+
+    Unitati comandate pentru acest lot: 50
+
+    Unitati finalizate
+    pentru acest lot: 13
+
+    Unitati ramase pentru finalizarea lotului: 37
+
+    Timp
+    mediu pentru producerea unei unitati: 207 sec
+
+    Downtime pe schimb: 12 min
+
+    Rebuturi
+    din acest lot: 0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1852,8 +1872,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
